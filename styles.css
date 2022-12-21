@@ -1,0 +1,234 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.page-content {
+    display: flex;
+}
+
+.container {
+    height: 100vh;
+}
+
+.left {
+    background-image: url(./images/background.webp);
+    width: 20vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    background-color: green;
+    width: 70vw;
+    height: 95vh;
+}
+
+.container .banner {
+    width: 30vw;
+    height: 15vh;
+    margin-bottom: 45vh;
+}
+
+.banner {
+    background-color: rgba(255, 255, 255, 0.4);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 15vh;
+    width: 15vh;
+}
+
+img {
+    max-width: inherit;
+    height: inherit;
+}
+
+.top {
+    width: auto;
+    height: 30vh;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.middle {
+    width: auto;
+    height: 35vh;
+    background-image: url(./images/background.webp);
+    box-shadow: 5px 0px 8px 10px #888888;
+}
+
+.bottom {
+    width: auto;
+    height: 30vh;
+    background-color: #f9fafb;
+    box-shadow: inset 0px 0px 8px 10px grey;
+}
+
+.align-bottom {
+    font-size: 3vh;
+    display: flex;
+    margin-left: 3vw;
+    overflow: hidden;
+}
+
+.middle .header {
+    padding-left: 3vw;
+    padding-top: 3vh;
+    font-size: 3vh;
+}
+
+.form {
+    display: flex;
+    justify-content: left;
+    padding-left: 2vw;
+    padding-top: 2vh;
+    gap: 5vw;
+}
+
+input,
+textarea {
+    margin-bottom: 1vh;
+    width: 10vw;
+    border-color: black;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+li {
+    list-style: none;
+}
+
+.submit-btn {
+    padding-top: 3vh;
+    padding-left: 3vw;
+}
+
+.btn {
+    height: 4vh;
+    width: 15vw;
+    border-radius: 5px;
+    background-color: lightskyblue;
+    color: white;
+}
+
+.spacing {
+    padding-top: 3vh;
+    font-size: 1.5vh;
+}
+
+a {
+    color: lightskyblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5vh;
+}
+
+label {
+    font-size: 1.2vh;
+}
+
+.footer {
+    width: 100vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filler {
+    height: 95vh;
+    width: 40vw;
+    background-color: black;
+}
+
+input:focus {
+    background-color: #888888;
+    box-shadow: 3px 3px 8px 4px grey;
+}
+
+#password,
+#confirm_password {
+    background: white;
+}
+
+input:invalid {
+    border-color: #900;
+    background-color: #fdd;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+input[type="email"] {
+    appearance: none;
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+    font-family: inherit;
+    font-size: 90%;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    appearance: none;
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+    font-family: inherit;
+    font-size: 90%;
+    box-sizing: border-box;
+}
+
+input[type="number"] {
+    appearance: none;
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+    font-family: inherit;
+    font-size: 90%;
+    box-sizing: border-box;
+}
+
+input[type="number"]:invalid {
+    background-color: red;
+}
+
+input[type="password"] {
+    appearance: none;
+    width: 20vw;
+    border: 1px solid #333;
+    margin: 0;
+    font-family: inherit;
+    font-size: 90%;
+    box-sizing: border-box;
+}
+
+.disabled {
+    background: red
+}

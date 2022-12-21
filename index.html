@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page-content">
+        <div class="filler"></div>
+        <div class="container left">
+            <div class="banner">
+                <div class="logo">
+                    <img src="./images/logologo.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="top">
+                <div></div>
+                <div class="align-bottom">
+                    <div>Welcome to my website, you are required to make an account to use this tool.</div>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="header">
+                    Let's do this!
+                </div>
+                <div class="form">
+                    <form novalidate>
+                        <div class="form">
+                            <div class="first">
+                                <label for="first_name">FIRST NAME<span aria-required="required field">*</span></label>
+                                <li><input type="text" name="first_name" id="first_name" placeholder="Bob" required><span class="error" aria-live="polite"></span></li>
+
+                                <label for="email">EMAIL<span aria-required="required field">*</span></label>
+                                <li><input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" /><span class="error" aria-live="polite"></span></li>
+
+                                <label for="password">PASSWORD<span aria-required="required field">*</span></label>
+                                <li><input type="password" name="password" id="password" placeholder="********" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" minlength="8" required><span class="error" aria-live="polite"></span></li>
+                            </div>
+                            <div class="second">
+
+                                <label for="last_name">LAST NAME<span aria-required="required field">*</span></label>
+                                <li><input type="text" name="last_name" id="last_name" placeholder="De Bouwer" required><span class="error" aria-live="polite"></span></li>
+
+                                <label for="phone_number">PHONE NUMBER<span aria-required="required field">*</span></label>
+                                <li>
+                                    <input type="text" name="phone_number" id="phone_number" placeholder="0412345678" pattern="^[0-9]{10}$" minlength="10" required><span class="error" aria-live="polite"></span></li>
+
+                                <label for="confirm_password">CONFIRM PASSWORD<span aria-required="required field">*</span></label>
+                                <li><input type="password" name="confirm_password" id="confirm_password" placeholder="********" onkeyup="check()" required><span class="error" aria-live="polite"></span></li>
+                                <div id="message"></div>
+
+                            </div>
+                        </div>
+                        <div class="submit-area">
+                            <button id="submitbtn" type="submit" onclick="check()" class="btn">Create Account</button>
+                            <span class="spacing">Already have an account? <a href=""> Log in</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="bottom">
+
+            </div>
+        </div>
+        <div class="filler"></div>
+    </div>
+    <div class="footer">
+        Copyright Nikolaas Daem
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
